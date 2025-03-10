@@ -382,8 +382,8 @@ after importing lets read and save our data set in array using numpy and pandas 
 
 ``` python
 DATA = pd.read_csv("planets_data.csv")#->reading the csv file and save it as array
-Features = DATA.drop(["gender"],axis=1)#->removing gender column from dataset and pass other columns to x features
-Target = DATA["gender"].values.reshape(-1,1)#->getting the result of x features
+Features = DATA.drop(["Gender"],axis=1)#->removing gender column from dataset and pass other columns to x features
+Target = DATA["Gender"].values.reshape(-1,1)#->getting the result of x features
 ```
 then we need to split our dataset to the group of 2 : `Train`, `Validation`
 
@@ -424,7 +424,7 @@ Validation_loaded = DataLoader(Validation_data_torch,batch_size=32)#->making val
 now that we have our dataset ready lets make our NN.
 to do that we to make class like this :
 ```python
-class NNmodel(nn.Module) :
+class NerualNModel(nn.Module) :
 .........
 ```
 
@@ -435,7 +435,7 @@ we need to setup our NN layers and activation function in Init function like thi
     DropOut, #->chance of dropout
     Num_hidden, #->num of hidden layers
     Num_outputs): #->num of outputs
-        super(NerualNetwork,self).__init__()
+        super(NerualNModel,self).__init__()
         #to make a value get transfer first layer to another, we use nn.linear
         self.normal = nn.BatchNorm1d(num_inputs)#->creating a normalized layer for inputs. in other word make the value of Xn between 0 or 1
         
@@ -470,7 +470,7 @@ Number_features = Train_x.shape[1]
 
 to create our model and save it we do this :
 ```python
-NNmodel = NerualNetwork(num_inputs=Number_features,DropOut=0.2,Num_hidden=64,Num_outputs=1)
+NNmodel = NerualNModel(num_inputs=Number_features,DropOut=0.2,Num_hidden=64,Num_outputs=1)
 ```
 now we need to calculate the loss, which we can just use a loss function and we need an optimizer as well so to do that we do this :
 ```python
@@ -519,7 +519,7 @@ for epoch in range(epochs):
 
 after training we can actually test the model :
 ```python
-        sample_input = np.array([[mass,distance,StF,OrDays,Eccentricity,Temp,atm,water]])#->giving a test 
+        sample_input = np.array([[163.8053817893671,54.73277335389531,243.03149704782862,21.499301492387644]])#->giving a test which should give output of 0
         NNmodel.eval()#->evaluate the model
         tesnor_input = torch.FloatTensor(sample_input)#->turn numpy array to tensor
         with torch.no_grad():#->no training
