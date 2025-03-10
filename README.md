@@ -13,8 +13,10 @@ ANNs have clear and genius structure. In general they are made out multiple laye
 ## Neurons
 an ANN consists of connected units or nodes called neurons. Each neuron/node receive inputs from connected neurons,
 and then the same neuron sends an input to other connected neurons:
+<div align="center">
+  <img src="https://i.postimg.cc/L6WJk4rR/Neuron7.png">
+</div>
 
-![Description](https://i.postimg.cc/L6WJk4rR/Neuron7.png)
 
 Each connection has its own `Weight`, which determines how likely it is for that individual neuron to be activated.</BR>
 And each neuron has it own `Bias`, which can be defined as the constant which is added to the product of features and weights.</br>
