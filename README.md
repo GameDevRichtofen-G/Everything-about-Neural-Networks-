@@ -23,14 +23,7 @@ and then the same neuron sends an input to other connected neurons:
 
 
 Each connection has its own `Weight`, which determines how likely it is for that individual neuron to be activated.</BR>
-And each neuron has it own `Bias`, which can be defined as the constant which is added to the product of features and weights.To transfer values from first Neuron to second Neuron we use this equation :
-</br>
-<div align="center">
-  <img src="https://latex.codecogs.com/svg.image?\LARGE&space;{\color{White}b&plus;\sum_{i=1}^{n}x_{i}w_{i}}">
-</div>
-
-the simplify version of this formula would be  <sub> ![Description](https://latex.codecogs.com/svg.image?{\color{White}Y=W_{i}\times&space;X_{i}&plus;bias}) </sub>
-</br>by doing this we can transfer value from one neuron to another. This process is called  `Forward Propagation`
+And each neuron has it own `Bias`, which can be defined as the constant which is added to the product of features and weights.
 ## Layers
 ### ANNs are made out 3 general layer.<br/>
 `INPUT` : Takes <sub> ![Description](https://latex.codecogs.com/svg.image?{\color{White}X_{1}\cdots&space;X_{n}}) </sub> as input</br>
@@ -39,3 +32,21 @@ the simplify version of this formula would be  <sub> ![Description](https://late
 <div align="center">
   <img src="https://i.postimg.cc/X7Msx5t7/Neuron8-1.png">
 </div>
+
+
+# Functionality
+ANN has a pefect algorithm that allows it to trains itself well and solve complex problems
+We will talk about its algorithm in a moment
+
+## Forward propagation 
+
+As mention earlier each connection to a neuron has `Weight` and each Neuron has something called `Bias`.
+we will use these parameters to transfer values with an adjustment.
+To transfer values from first Neuron to second Neuron we use this equation :
+</br>
+<div align="center">
+  <img src="https://latex.codecogs.com/svg.image?\LARGE&space;{\color{White}b&plus;\sum_{i=1}^{n}x_{i}w_{i}}">
+</div>
+
+the simplify version of this formula would be  <sub> ![Description](https://latex.codecogs.com/svg.image?{\color{White}Y=W_{i}\times&space;X_{i}&plus;bias}) </sub>
+</br>by doing this we can transfer value from one neuron to another. This process is called  `Forward Propagation`
