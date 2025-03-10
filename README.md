@@ -105,3 +105,18 @@ SGD updates the weights in the opposite direction of the `gradient`:
 
 ![Description](https://latex.codecogs.com/svg.image?\tiny&space;{\color{White}\frac{\partial&space;L}{\partial&space;W}}) : Gradient of the loss with respect to weight 
 
+
+#### Adam (Adaptive Moment Estimation)
+Adam is one of the most widely used optimizers and adapts the learning rate for each weight:
+
+<div align="center">
+  <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}m_{t}=\beta_{1}m_{t-1}&plus;(1-\beta_{1}\frac{\partial&space;L}{\partial&space;W})}"> </br>
+  <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}v_{t}=\beta_{2}v_{t-1}&plus;(1-\beta_{2}(\frac{\partial&space;L}{\partial&space;W})^{2})}"> </br>
+  <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}\hat{m}_{t}=\frac{m_{t}}{1-\beta&space;_{t}^{1}}}">, <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}\hat{v}_{t}=\frac{v_{t}}{1-\beta&space;_{v}^{2}}}">  </br>
+  <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}Wnew=Wold-a\frac{\hat{m}_{t}}{\sqrt{\hat{v}_t}&plus;\epsilon}}"> </br>
+  
+</div>
+
+
+there are many different other optimizers, but these two are the most common ones for `binary cross entropy ` and `Multi Cross entropy`.
+
