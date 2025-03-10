@@ -138,3 +138,6 @@ they are so many different ways to create our own Neural network. We can make on
 TensorFlow             |  Pytorch
 :-------------------------:|:-------------------------:
 ![Description](https://i.postimg.cc/fR6FByfX/Tensor-Flow-logo-svg.png)  |  ![Description](https://i.postimg.cc/3N4mS8B4/Py-Torch-logo-white-svg-1.png)
+
+
+We gonna use both of them to make a simple binary classification model.
