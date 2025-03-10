@@ -59,7 +59,10 @@ or sometimes do other stuff like normalizing.
 #### Relu 
 ReLU or Rectified Linear Unit is an activation function which make neuron deactivate if the value of that neuron is 0 or less.
 <div align="center">
+  <img src="https://github.com/GameDevRichtofen-G/Everything-about-Neural-Networks-/blob/main/Relu_function.png"></br>
   <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}Relu(x)=max(0,x)}">
+  
+  
 </div>
 
 #### Sigmoid
