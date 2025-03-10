@@ -34,7 +34,7 @@ the simplify version of this formula would be  <sub> ![Description](https://late
 ## Layers
 ### ANNs are made out 3 general layer.<br/>
 `INPUT` : Takes <sub> ![Description](https://latex.codecogs.com/svg.image?{\color{White}X_{1}\cdots&space;X_{n}}) </sub> as input</br>
-`HIDDEN` : the layers of neurons that are situated between the `INPUT` layer and the `IOUTPUT` layer</br>
+`HIDDEN` : the layers of neurons that are situated between the `INPUT` layer and the `OUTPUT` layer</br>
 `OUTPUT` : The last layer of NN model that gives out <sub> ![Description](https://latex.codecogs.com/svg.image?\large&space;{\color{White}y_{n}}) </sub></BR>
 <div align="center">
   <img src="https://i.postimg.cc/X7Msx5t7/Neuron8-1.png">
