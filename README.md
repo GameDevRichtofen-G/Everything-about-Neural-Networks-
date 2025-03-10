@@ -81,3 +81,8 @@ C = Number of classes</br> </br>
 ![Description](https://latex.codecogs.com/svg.image?{\color{white}Yreal_{i},_{k}}) = One-hot encoded actual class label (1 if sample i belongs to class k otherwise 0)
 
 ![Description](https://latex.codecogs.com/svg.image?{\color{white}Ypred_{i},_{k}}) = Predicted probability for class k
+
+
+#### Optimizer 
+
+optimizer is a operation that will adjust weight and bias to reduce the amount of the `loss` for certain prediction
