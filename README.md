@@ -51,6 +51,31 @@ To transfer values from first Neuron to second Neuron we use this equation :
 the simplify version of this formula would be  <sub> ![Description](https://latex.codecogs.com/svg.image?{\color{White}Y=W_{i}\times&space;X_{i}&plus;bias}) </sub>
 </br>by doing this we can transfer value from one neuron to another. This process is called  `Forward Propagation`
 
+### Activation function 
+
+a mathematical function that can be applied to result of a neuron, we mostly use activation functions to determine whether neuron gonna get fire or not
+or sometimes do other stuff like normalizing.
+
+#### Relu 
+ReLU or Rectified Linear Unit is an activation function which make neuron deactivate if the value of that neuron is 0 or less.
+<div align="center">
+  <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}Relu(x)=max(0,x)}">
+</div>
+
+#### Sigmoid
+Sigmoid takes input and passes output between 0 and 1
+
+<div align="center">
+  <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}Sigmoid(x)=\frac{1}{1&plus;e^{-x}}}">
+</div>
+
+
+
+
+
+
+
+
 ## Backward Propagation
 `Backward Propagation` is just like `Forward Propagation` but we start from output layer.
 we use `Backward Propagation` to train our model. This process is done via few steps :
@@ -131,7 +156,7 @@ Adam is one of the most widely used optimizers and adapts the learning rate for 
 there are many different other optimizers, but these two are the most common ones for `binary cross entropy ` and `Multi Cross entropy`.
 
 # How to create a NN
-they are so many different ways to create our own Neural network. We can make one from scratch or we can one using different `tools` like : 
+there are so many different ways to create our own Neural network. We can make one from scratch or we can one using different `tools` like : 
 
 
   
