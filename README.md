@@ -20,7 +20,9 @@ Each connection has its own `Weight`, which determines how likely it is for that
 And each neuron has it own `Bias`, which can be defined as the constant which is added to the product of features and weights.</br>
 To transfer values from first Neuron to second Neuron we use this equation :
 </br>
-![Description](https://latex.codecogs.com/svg.image?\LARGE&space;{\color{White}b&plus;\sum_{i=1}^{n}x_{i}w_{i}})
+<div align="center">
+  <img src="https://latex.codecogs.com/svg.image?\LARGE&space;{\color{White}b&plus;\sum_{i=1}^{n}x_{i}w_{i}}">
+</div>
 
 ## Layers
 ANNs are made out 3 general layer.<br/>
