@@ -69,8 +69,18 @@ ReLU or Rectified Linear Unit is an activation function which make neuron deacti
 Sigmoid takes input and passes output between 0 and 1
 
 <div align="center">
+  <img src="https://github.com/GameDevRichtofen-G/Everything-about-Neural-Networks-/blob/main/Sigmoid_function.png"></br>
   <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}Sigmoid(x)=\frac{1}{1&plus;e^{-x}}}">
 </div>
+
+#### SoftMax
+Unlike sigmoid which compress single input, softmax compress multiple input.
+
+<div align="center">
+  <img src="https://github.com/GameDevRichtofen-G/Everything-about-Neural-Networks-/blob/main/Soft_max_function.png"></br>
+  <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}SoftMax(x_{i})=\frac{e^{x_{i}}}{\sum_{j}e^{x_{j}}}}">
+</div>
+
 
 
 
