@@ -189,7 +189,8 @@ to do this we will use function blow to split our data set to x and y
 
 ``` python
 
-def GET_XandY(data_frame#->our dataset,y_labels#our y or outputs, usually the last column,
+def GET_XandY(data_frame#->our dataset,
+y_labels#our y or outputs, usually the last column,
 x_labels = None#->This is customizialbe if you just wanna train model only on one column,
 oversample = False#->oversampling is technic to make our dataset equal, For instance if we have 200 male and 100 woman, we will make dataset 100 male and 100 woman) :
     data_frame = copy.deepcopy(data_frame) #->getting a copy from our dataset
