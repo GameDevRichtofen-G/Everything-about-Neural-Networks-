@@ -130,3 +130,11 @@ Adam is one of the most widely used optimizers and adapts the learning rate for 
 ![Description]( https://latex.codecogs.com/svg.image?\large&space;{\color{white}v_{t}}) : Second Moment - Mean of Squared Gradients </br>
 there are many different other optimizers, but these two are the most common ones for `binary cross entropy ` and `Multi Cross entropy`.
 
+# How to create a NN
+they are so many different ways to create our own Neural network. We can make one from scratch or we can one using different `tools` like : 
+
+
+  
+TensorFlow             |  Pytorch
+:-------------------------:|:-------------------------:
+![Description](https://i.postimg.cc/fR6FByfX/Tensor-Flow-logo-svg.png)  |  ![Description](https://i.postimg.cc/3N4mS8B4/Py-Torch-logo-white-svg-1.png)
