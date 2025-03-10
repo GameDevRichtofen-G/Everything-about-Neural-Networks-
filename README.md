@@ -26,6 +26,8 @@ To transfer values from first Neuron to second Neuron we use this equation :
   <img src="https://latex.codecogs.com/svg.image?\LARGE&space;{\color{White}b&plus;\sum_{i=1}^{n}x_{i}w_{i}}">
 </div>
 
+the simplify version of this formula would be  <sub> ![Description](https://latex.codecogs.com/svg.image?{\color{White}Y=W_{i}\times&space;X_{i}&plus;bias}) </sub>
+</br>by doing this we can transfer value from one neuron to another.
 ## Layers
 ANNs are made out 3 general layer.<br/>
 `INPUT` : Takes <sub> ![Description](https://latex.codecogs.com/svg.image?{\color{White}X_{1}\cdots&space;X_{n}}) </sub> as input</br>
