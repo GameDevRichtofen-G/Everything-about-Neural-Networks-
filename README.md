@@ -349,4 +349,46 @@ for s in range(len(prediction)):#->going through each predication
 
 ```
 
+### Pytorch 
+This time we gonna make the same model in pytorch,
+First we need dataset, for this project I like to make a binary classification model that predicts the gender of a person(0 female and 1 male)
+install the dataset csv from this github repository. </br>
+Install Torch, Numpy, plot and scikit learn using this command :
+```
+pip install torch numpy pandas scikit-learn matplotlib
+#->torch : to make our nn model
+#->numpy : to setup our dataset
+#->pandas : to read our dataset
+#->sklearn : to split the dataset
+#->matplotlib : to show our results
+```
+
+and then make a python file and call it TrainModel.py or what ever name you want.
+
+Import these libraries to your python file :
+
+```python
+import torch.nn as nn
+import numpy as np
+import pandas as pd
+import torch as torch#->we use this for nn model
+import torch.optim as opt#-> we use this to make our optimizer
+from sklearn.preprocessing import StandardScaler 
+from torch.utils.data import TensorDataset#-> turning np to torch tensor
+from torch.utils.data import DataLoader#-> for loading a tensor
+from sklearn.model_selection import train_test_split as split_data#->we use this to split data
+```
+after importing lets read and save our data set in array using numpy and pandas :
+
+``` python
+Data_set = pd.read_csv("planets_data.csv")#->reading the csv file and save it as array
+```
+then we need to split our dataset to the group of 3 : `Train`, `Validation`, `Test`
+
+```python
+
+
+
+
+
 
