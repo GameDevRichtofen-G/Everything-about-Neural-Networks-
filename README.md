@@ -117,6 +117,16 @@ Adam is one of the most widely used optimizers and adapts the learning rate for 
   
 </div>
 
+<sub> ![Description](https://latex.codecogs.com/svg.image?\large&space;{\color{white}\beta_{1},\beta_{2}}) </sub> : decay rates (commonly 0.9, 0.999)
 
+![Description](https://latex.codecogs.com/svg.image?{\color{Yellow}a}) : Learning rate(it is a really small value use to tweak the adjustment by a little)
+
+![Description](https://latex.codecogs.com/svg.image?\tiny&space;{\color{White}\frac{\partial&space;L}{\partial&space;W}}) : Gradient of the loss with respect to weight 
+
+![Description](https://latex.codecogs.com/svg.image?\large&space;{\color{white}\epsilon}) : it is really small value to make sure we are not dividing with 0
+
+![Description]( https://latex.codecogs.com/svg.image?\large&space;{\color{white}m_{t}}) : First Moment - Mean of Gradients
+
+![Description]( https://latex.codecogs.com/svg.image?\large&space;{\color{white}v_{t}}) : Second Moment - Mean of Squared Gradients </br>
 there are many different other optimizers, but these two are the most common ones for `binary cross entropy ` and `Multi Cross entropy`.
 
