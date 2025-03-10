@@ -23,8 +23,7 @@ and then the same neuron sends an input to other connected neurons:
 
 
 Each connection has its own `Weight`, which determines how likely it is for that individual neuron to be activated.</BR>
-And each neuron has it own `Bias`, which can be defined as the constant which is added to the product of features and weights.</br>
-To transfer values from first Neuron to second Neuron we use this equation :
+And each neuron has it own `Bias`, which can be defined as the constant which is added to the product of features and weights.To transfer values from first Neuron to second Neuron we use this equation :
 </br>
 <div align="center">
   <img src="https://latex.codecogs.com/svg.image?\LARGE&space;{\color{White}b&plus;\sum_{i=1}^{n}x_{i}w_{i}}">
