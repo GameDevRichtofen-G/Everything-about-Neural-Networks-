@@ -3,6 +3,7 @@ Artificial Neural Networks are one the most powerful ML/DL models, capable of so
 like us humans. NN was found in 1958, where psychologist 		**Frank Rosenblatt**. He was the first person
 who manage to implement the first NN model. These images shows the simliarity between humans NN and ML/DL ANN :
 </br>
+</br>
 Human NN             |  AI ANN
 :-------------------------:|:-------------------------:
 ![Description](https://github.com/GameDevRichtofen-G/Everything-about-Neural-Networks-/blob/main/Neuron6.png)  |  ![Description](https://github.com/GameDevRichtofen-G/Everything-about-Neural-Networks-/blob/main/Neuron5.png)
