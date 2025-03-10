@@ -91,14 +91,17 @@ the `gradient` tells us the direction and rate of change of a loss function. whi
 
 
 
-#### Optimizer 
+### Optimizer 
 
 optimizer is a operation that will adjust weight and bias to reduce the amount of the `loss` for certain prediction.
 The most common optimizers 
-##### Stochastic Gradient Descent (SGD)
+#### Stochastic Gradient Descent (SGD)
 SGD updates the weights in the opposite direction of the `gradient`:
 <div align="center">
   <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}Wnew=Wold-{\color{Yellow}a}\frac{\partial&space;L}{\partial&space;w}}">
 </div>
 
 ![Description](https://latex.codecogs.com/svg.image?{\color{Yellow}a}) : Learning rate(it is a really small value use to tweak the adjustment by a little)
+
+![Description](https://latex.codecogs.com/svg.image?\tiny&space;{\color{White}\frac{\partial&space;L}{\partial&space;W}}) : Gradient of the loss with respect to weight 
+
