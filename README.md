@@ -189,10 +189,10 @@ to do this we will use function blow to split our data set to x and y
 
 ``` python
 
-def GET_XandY(data_frame#->our dataset,
-y_labels#our y or outputs, usually the last column,
-x_labels = None#->This is customizialbe if you just wanna train model only on one column,
-oversample = False#->oversampling is technic to make our dataset equal, For instance if we have 200 male and 100 woman, we will make dataset 100 male and 100 woman) :
+def GET_XandY(data_frame,#->our dataset
+y_labels,#our y or outputs, usually the last column,
+x_labels = None,#->This is customizialbe if you just wanna train model only on one column,
+oversample = False) :#->oversampling is technic to make our dataset equal, For instance if we have 200 male and 100 woman, we will make dataset 100 male and 100 woman
     data_frame = copy.deepcopy(data_frame) #->getting a copy from our dataset
     if x_labels is None:
         x = data_frame[[c for c in data_frame.columns if c!=y_labels]].values#->if we didn't have any custom x lable we just pass all the column except of the column that contains our outputs
@@ -229,7 +229,7 @@ Num_Inputs#->Our Num x features
 ,DropOut, #-> our num of dropouts, we use this to randomally remove node
 LR, #->Learning Rate or a
 Num_Nodes, # Number of hidden layer neuron
-Xtrain #->our x features) :
+Xtrain) :  #->our x features
     
     Norml_ = keras.layers.Normalization(input_shape = (Num_Inputs,),axis=-1)#->this basically our input layer, but we normalize our x features
     
@@ -265,9 +265,9 @@ XValid,#->our x feature validation to test the model on new data
 YValid,#->our y real validation
 Epochs,#->number of training sessions, in other word train model more
 Batch_size,#->our sample size or batchsize
-Show = False#->if we want we make this true to show the result
-) :
-    History = Input_model.fit(Xtrain,Ytrain,epochs=Epochs,verbose=int(Show)#->whether to show process or not,validation_data=(XValid,YValid),batch_size = Batch_size)#-> train the model and then save the loss history
+Show = False) : #->if we want we make this true to show the result
+
+    History = Input_model.fit(Xtrain,Ytrain,epochs=Epochs,verbose=int(Show),validation_data=(XValid,YValid),batch_size = Batch_size)#train the model and then save the loss history
     return History #->return our history
 ```
 Now to train we use this code :
@@ -308,3 +308,5 @@ for s in range(len(prediction)):#->going through each predication
 
 
 ```
+
+
