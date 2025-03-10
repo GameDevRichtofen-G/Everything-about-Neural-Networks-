@@ -1,6 +1,6 @@
 # What is Artificial Neural Network
-Artificial Neural Networks are one most powerful ML/DL model, capable of solving complex problems in simliar 
-to us humans. NN was found in 1958, where psychologist 		**Frank Rosenblatt**. He was the first person
+Artificial Neural Networks are one the most powerful ML/DL models, capable of solving complex problems in simliar ways
+like us humans. NN was found in 1958, where psychologist 		**Frank Rosenblatt**. He was the first person
 who manage to implement the first NN model. These images shows the simliarity between humans NN and ML/DL ANN :
 
 ![Description](https://github.com/GameDevRichtofen-G/Everything-about-Neural-Networks-/blob/main/Neuron6.png)
@@ -15,6 +15,12 @@ an ANN consists of connected units or nodes called neurons. Each neuron/node rec
 and then the same neuron sends an input to other connected neurons:
 
 ![Description](https://i.postimg.cc/L6WJk4rR/Neuron7.png)
+
+Each connection has its own `Weight`, which determines how likely it is for that individual neuron to be activated.</BR>
+And each neuron has it own `Bias`, which can be defined as the constant which is added to the product of features and weights.</br>
+To transfer values from first Neuron to second Neuron we use this equation :
+</br>
+![Description](https://latex.codecogs.com/svg.image?\LARGE&space;{\color{White}b&plus;\sum_{i=1}^{n}x_{i}w_{i}})
 
 ## Layers
 ANNs are made out 3 general layer.<br/>
