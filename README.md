@@ -32,7 +32,10 @@ And each neuron has it own `Bias`, which can be defined as the constant which is
 the simplify version of this formula would be  <sub> ![Description](https://latex.codecogs.com/svg.image?{\color{White}Y=W_{i}\times&space;X_{i}&plus;bias}) </sub>
 </br>by doing this we can transfer value from one neuron to another. This process is called  `Forward Propagation`
 ## Layers
-ANNs are made out 3 general layer.<br/>
+### ANNs are made out 3 general layer.<br/>
 `INPUT` : Takes <sub> ![Description](https://latex.codecogs.com/svg.image?{\color{White}X_{1}\cdots&space;X_{n}}) </sub> as input</br>
-`HIDDEN` : 
-
+`HIDDEN` : the layers of neurons that are situated between the `INPUT` layer and the `IOUTPUT` layer</br>
+`OUTPUT` : The last layer of NN model that gives out <sub> ![Description](https://latex.codecogs.com/svg.image?\large&space;{\color{White}y_{n}}) </sub></BR>
+<div align="center">
+  <img src="https://i.postimg.cc/X7Msx5t7/Neuron8-1.png">
+</div>
