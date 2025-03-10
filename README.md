@@ -83,6 +83,22 @@ C = Number of classes</br> </br>
 ![Description](https://latex.codecogs.com/svg.image?{\color{white}Ypred_{i},_{k}}) = Predicted probability for class k
 
 
+#### Getting the gradient
+the `gradient` tells us the direction and rate of change of a loss function. which we can use this formula to get it : </br>
+<div align="center">
+  <img src="https://latex.codecogs.com/svg.image?{\color{white}\frac{\partial&space;L}{\partial&space;w}}">
+</div>
+
+
+
 #### Optimizer 
 
-optimizer is a operation that will adjust weight and bias to reduce the amount of the `loss` for certain prediction
+optimizer is a operation that will adjust weight and bias to reduce the amount of the `loss` for certain prediction.
+The most common optimizers 
+##### Stochastic Gradient Descent (SGD)
+SGD updates the weights in the opposite direction of the `gradient`:
+<div align="center">
+  <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}Wnew=Wold-{\color{Yellow}a}\frac{\partial&space;L}{\partial&space;w}}">
+</div>
+
+![Description](https://latex.codecogs.com/svg.image?{\color{Yellow}a}) : Learning rate(it is a really small value use to tweak the adjustment by a little)
