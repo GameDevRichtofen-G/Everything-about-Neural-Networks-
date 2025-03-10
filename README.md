@@ -81,6 +81,8 @@ Unlike sigmoid which compress single input, softmax compress multiple input.
   <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}SoftMax(x_{i})=\frac{e^{x_{i}}}{\sum_{j}e^{x_{j}}}}">
 </div>
 
+we have more activation function to check but for now these 3 are the most common ones.
+
 
 
 
