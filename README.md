@@ -112,13 +112,16 @@ N = Number of samples (batch size)</br> </br>
 this loss function is useful if you have model that needs to predict a value more than 0 or 1
 
 <div align="center">
+<picture>
+  <source srcset="https://latex.codecogs.com/svg.image?\LARGE&space;{\color{black}L=-\frac{1}{N}\sum_{i=1}^{N}\sum_{k=1}^{C}Yreal_{i},_{k}log(Ypred_{i},_{k})}" media="(prefers-color-scheme: light)">
   <img src="https://latex.codecogs.com/svg.image?\LARGE&space;{\color{white}L=-\frac{1}{N}\sum_{i=1}^{N}\sum_{k=1}^{C}Yreal_{i},_{k}log(Ypred_{i},_{k})}">
+</picture>
 </div>
 N = Number of samples (batch size)</br> </br> 
 
 C = Number of classes</br> </br> 
 
-![Description](https://latex.codecogs.com/svg.image?{\color{white}Yreal_{i},_{k}}) = One-hot encoded actual class label (1 if sample i belongs to class k otherwise 0)
+![Light Mode](https://latex.codecogs.com/svg.image?{\color{white}Yreal_{i},_{k}}) = One-hot encoded actual class label (1 if sample i belongs to class k otherwise 0)
 
 ![Description](https://latex.codecogs.com/svg.image?{\color{white}Ypred_{i},_{k}}) = Predicted probability for class k
 
