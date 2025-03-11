@@ -60,8 +60,10 @@ or sometimes do other stuff like normalizing.
 ReLU or Rectified Linear Unit is an activation function which make neuron deactivate if the value of that neuron is 0 or less.
 <div align="center">
   <img src="https://github.com/GameDevRichtofen-G/Everything-about-Neural-Networks-/blob/main/Relu_function.png"></br>
-  <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}Relu(x)=max(0,x)}">
-  
+  <picture>
+    <source srcset="https://latex.codecogs.com/svg.image?\large&space;{\color{black}Relu(x)=max(0,x)}" media="(prefers-color-scheme: light)">
+    <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}Relu(x)=max(0,x)}">
+  </picture>
   
 </div>
 
@@ -70,7 +72,10 @@ Sigmoid takes input and passes output between 0 and 1
 
 <div align="center">
   <img src="https://github.com/GameDevRichtofen-G/Everything-about-Neural-Networks-/blob/main/Sigmoid_function.png"></br>
-  <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}Sigmoid(x)=\frac{1}{1&plus;e^{-x}}}">
+  <picture>
+    <source srcset="https://latex.codecogs.com/svg.image?\large&space;{\color{black}Sigmoid(x)=\frac{1}{1&plus;e^{-x}}}" media="(prefers-color-scheme: light)">
+    <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}Sigmoid(x)=\frac{1}{1&plus;e^{-x}}}">
+  </picture>
 </div>
 
 #### SoftMax
@@ -78,7 +83,10 @@ Unlike sigmoid which compress single input, softmax compress multiple input.
 
 <div align="center">
   <img src="https://github.com/GameDevRichtofen-G/Everything-about-Neural-Networks-/blob/main/Soft_max_function.png"></br>
-  <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}SoftMax(x_{i})=\frac{e^{x_{i}}}{\sum_{j}e^{x_{j}}}}">
+  <picture>
+    <source srcset="https://latex.codecogs.com/svg.image?\large&space;{\color{black}SoftMax(x_{i})=\frac{e^{x_{i}}}{\sum_{j}e^{x_{j}}}}" media="(prefers-color-scheme: light)">
+    <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}SoftMax(x_{i})=\frac{e^{x_{i}}}{\sum_{j}e^{x_{j}}}}">
+  </picture>
 </div>
 
 we have more activation function to check but for now these 3 are the most common ones.
@@ -101,7 +109,10 @@ the equation to calculating the loss can be different base on the type of a mode
 the use case for this loss function is for models that have only 2 ouput value, either 0 or 1
 </br>
 <div align="center">
-  <img src="https://latex.codecogs.com/svg.image?\LARGE&space;{\color{white}L=-\frac{1}{N}\sum_{N}^{i=1}[y_{real}log(y_{pred}&plus;(1-y_{real})log(1-y_{pred}))]}">
+  <picture>
+    <source srcset="https://latex.codecogs.com/svg.image?\LARGE&space;{\color{black}L=-\frac{1}{N}\sum_{N}^{i=1}[y_{real}log(y_{pred}&plus;(1-y_{real})log(1-y_{pred}))]}" media="(prefers-color-scheme: light)">
+    <img src="https://latex.codecogs.com/svg.image?\LARGE&space;{\color{white}L=-\frac{1}{N}\sum_{N}^{i=1}[y_{real}log(y_{pred}&plus;(1-y_{real})log(1-y_{pred}))]}">
+  </picture>
 </div>
 N = Number of samples (batch size)</br> </br> 
 
