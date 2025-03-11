@@ -45,7 +45,10 @@ we will use these parameters to transfer values with an adjustment.
 To transfer values from first Neuron to second Neuron we use this equation :
 </br>
 <div align="center">
-  <img src="https://latex.codecogs.com/svg.image?\LARGE&space;{\color{White}b&plus;\sum_{i=1}^{n}x_{i}w_{i}}">
+  <picture>
+    <source srcset="https://latex.codecogs.com/svg.image?\LARGE&space;{\color{black}b&plus;\sum_{i=1}^{n}x_{i}w_{i}}" media="(prefers-color-scheme: light)">
+    <img src="https://latex.codecogs.com/svg.image?\LARGE&space;{\color{white}b&plus;\sum_{i=1}^{n}x_{i}w_{i}}">
+  </picture>
 </div>
 
 the simplify version of this formula would be  <sub> ![Description](https://latex.codecogs.com/svg.image?{\color{White}Y=W_{i}\times&space;X_{i}&plus;bias}) </sub>
@@ -116,9 +119,21 @@ the use case for this loss function is for models that have only 2 ouput value, 
 </div>
 N = Number of samples (batch size)</br> </br> 
 
-![Description](https://latex.codecogs.com/svg.image?{\color{white}y_{real}}) the actual value
+<div align="left">
+  <picture>
+    <source srcset="https://latex.codecogs.com/svg.image?{\color{black}y_{real}}" media="(prefers-color-scheme: light)">
+    <img src="https://latex.codecogs.com/svg.image?{\color{white}y_{real}}">
+  </picture>
+  = the actual value
+</div>
 
-![Description](https://latex.codecogs.com/svg.image?{\color{white}y_{pred}}) the predicted value
+<div align="left">
+  <picture>
+    <source srcset="https://latex.codecogs.com/svg.image?{\color{black}y_{pred}}" media="(prefers-color-scheme: light)">
+    <img src="https://latex.codecogs.com/svg.image?{\color{white}y_{pred}}">
+  </picture>
+  = the predicted value
+</div>
 #### Multi Cross entropy
 this loss function is useful if you have model that needs to predict a value more than 0 or 1
 
@@ -132,15 +147,30 @@ N = Number of samples (batch size)</br> </br>
 
 C = Number of classes</br> </br> 
 
-![Light Mode](https://latex.codecogs.com/svg.image?{\color{white}Yreal_{i},_{k}}) = One-hot encoded actual class label (1 if sample i belongs to class k otherwise 0)
+<div align="left">
+  <picture>
+    <source srcset="https://latex.codecogs.com/svg.image?{\color{black}Yreal_{i},_{k}}" media="(prefers-color-scheme: light)">
+    <img src="https://latex.codecogs.com/svg.image?{\color{white}Yreal_{i},_{k}}">
+  </picture>
+  = One-hot encoded actual class label (1 if sample i belongs to class k otherwise 0)
+</div>
 
-![Description](https://latex.codecogs.com/svg.image?{\color{white}Ypred_{i},_{k}}) = Predicted probability for class k
+<div align="left">
+  <picture>
+    <source srcset="https://latex.codecogs.com/svg.image?{\color{black}Ypred_{i},_{k}}" media="(prefers-color-scheme: light)">
+    <img src="https://latex.codecogs.com/svg.image?{\color{white}Ypred_{i},_{k}}">
+  </picture>
+  = Predicted probability for class k
+</div>
 
 
 #### Getting the gradient
 the `gradient` tells us the direction and rate of change of a loss function. which we can use this formula to get it : </br>
 <div align="center">
-  <img src="https://latex.codecogs.com/svg.image?{\color{white}\frac{\partial&space;L}{\partial&space;w}}">
+  <picture>
+    <source srcset="https://latex.codecogs.com/svg.image?{\color{black}\frac{\partial&space;L}{\partial&space;w}}" media="(prefers-color-scheme: light)">
+    <img src="https://latex.codecogs.com/svg.image?{\color{white}\frac{\partial&space;L}{\partial&space;w}}">
+  </picture>
 </div>
 
 
@@ -152,37 +182,102 @@ The most common optimizers
 #### Stochastic Gradient Descent (SGD)
 SGD updates the weights in the opposite direction of the `gradient`:
 <div align="center">
-  <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}Wnew=Wold-{\color{Yellow}a}\frac{\partial&space;L}{\partial&space;w}}">
+  <picture>
+    <source srcset="https://latex.codecogs.com/svg.image?\large&space;{\color{black}Wnew=Wold-{\color{yellow}a}\frac{\partial&space;L}{\partial&space;w}}" media="(prefers-color-scheme: light)">
+    <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}Wnew=Wold-{\color{yellow}a}\frac{\partial&space;L}{\partial&space;w}}">
+  </picture>
 </div>
 
 ![Description](https://latex.codecogs.com/svg.image?{\color{Yellow}a}) : Learning rate(it is a really small value use to tweak the adjustment by a little)
 
-![Description](https://latex.codecogs.com/svg.image?\tiny&space;{\color{White}\frac{\partial&space;L}{\partial&space;W}}) : Gradient of the loss with respect to weight 
-
+<div align="left">
+  <picture>
+    <source srcset="https://latex.codecogs.com/svg.image?\tiny&space;{\color{black}\frac{\partial&space;L}{\partial&space;W}}" media="(prefers-color-scheme: light)">
+    <img src="https://latex.codecogs.com/svg.image?\tiny&space;{\color{white}\frac{\partial&space;L}{\partial&space;W}}">
+  </picture>
+  : Gradient of the loss with respect to weight
+</div>
 
 #### Adam (Adaptive Moment Estimation)
 Adam is one of the most widely used optimizers and adapts the learning rate for each weight:
 
 <div align="center">
-  <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}m_{t}=\beta_{1}m_{t-1}&plus;(1-\beta_{1}\frac{\partial&space;L}{\partial&space;W})}"> </br>
-  <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}v_{t}=\beta_{2}v_{t-1}&plus;(1-\beta_{2}(\frac{\partial&space;L}{\partial&space;W})^{2})}"> </br>
-  <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}\hat{m}_{t}=\frac{m_{t}}{1-\beta&space;_{t}^{1}}}">, <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}\hat{v}_{t}=\frac{v_{t}}{1-\beta&space;_{v}^{2}}}">  </br>
-  <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}Wnew=Wold-a\frac{\hat{m}_{t}}{\sqrt{\hat{v}_t}&plus;\epsilon}}"> </br>
-  
+  <picture>
+    <source srcset="https://latex.codecogs.com/svg.image?\large&space;{\color{black}m_{t}=\beta_{1}m_{t-1}&plus;(1-\beta_{1}\frac{\partial&space;L}{\partial&space;W})}" media="(prefers-color-scheme: light)">
+    <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}m_{t}=\beta_{1}m_{t-1}&plus;(1-\beta_{1}\frac{\partial&space;L}{\partial&space;W})}">
+  </picture>
+  <br>
+  <picture>
+    <source srcset="https://latex.codecogs.com/svg.image?\large&space;{\color{black}v_{t}=\beta_{2}v_{t-1}&plus;(1-\beta_{2}(\frac{\partial&space;L}{\partial&space;W})^{2})}" media="(prefers-color-scheme: light)">
+    <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}v_{t}=\beta_{2}v_{t-1}&plus;(1-\beta_{2}(\frac{\partial&space;L}{\partial&space;W})^{2})}">
+  </picture>
+  <br>
+  <picture>
+    <source srcset="https://latex.codecogs.com/svg.image?\large&space;{\color{black}\hat{m}_{t}=\frac{m_{t}}{1-\beta_{t}^{1}}}" media="(prefers-color-scheme: light)">
+    <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}\hat{m}_{t}=\frac{m_{t}}{1-\beta_{t}^{1}}}">
+  </picture>
+  , 
+  <picture>
+    <source srcset="https://latex.codecogs.com/svg.image?\large&space;{\color{black}\hat{v}_{t}=\frac{v_{t}}{1-\beta_{v}^{2}}}" media="(prefers-color-scheme: light)">
+    <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}\hat{v}_{t}=\frac{v_{t}}{1-\beta_{v}^{2}}}">
+  </picture>
+  <br>
+  <picture>
+    <source srcset="https://latex.codecogs.com/svg.image?\large&space;{\color{black}Wnew=Wold-a\frac{\hat{m}_{t}}{\sqrt{\hat{v}_t}&plus;\epsilon}}" media="(prefers-color-scheme: light)">
+    <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}Wnew=Wold-a\frac{\hat{m}_{t}}{\sqrt{\hat{v}_t}&plus;\epsilon}}">
+  </picture>
+  <br>
 </div>
 
-<sub> ![Description](https://latex.codecogs.com/svg.image?\large&space;{\color{white}\beta_{1},\beta_{2}}) </sub> : decay rates (commonly 0.9, 0.999)
+<sub>
+  <picture>
+    <source srcset="https://latex.codecogs.com/svg.image?\large&space;{\color{black}\beta_{1},\beta_{2}}" media="(prefers-color-scheme: light)">
+    <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}\beta_{1},\beta_{2}}">
+  </picture>
+</sub> : decay rates (commonly 0.9, 0.999)
 
-![Description](https://latex.codecogs.com/svg.image?{\color{Yellow}a}) : Learning rate(it is a really small value use to tweak the adjustment by a little)
+<div align="left">
+  <picture>
+    <source srcset="https://latex.codecogs.com/svg.image?{\color{black}a}" media="(prefers-color-scheme: light)">
+    <img src="https://latex.codecogs.com/svg.image?{\color{yellow}a}">
+  </picture>
+  : Learning rate (it is a really small value used to tweak the adjustment by a little)
+</div>
 
-![Description](https://latex.codecogs.com/svg.image?\tiny&space;{\color{White}\frac{\partial&space;L}{\partial&space;W}}) : Gradient of the loss with respect to weight 
+<div align="left">
+  <picture>
+    <source srcset="https://latex.codecogs.com/svg.image?\tiny&space;{\color{black}\frac{\partial&space;L}{\partial&space;W}}" media="(prefers-color-scheme: light)">
+    <img src="https://latex.codecogs.com/svg.image?\tiny&space;{\color{white}\frac{\partial&space;L}{\partial&space;W}}">
+  </picture>
+  : Gradient of the loss with respect to weight
+</div>
 
-![Description](https://latex.codecogs.com/svg.image?\large&space;{\color{white}\epsilon}) : it is really small value to make sure we are not dividing with 0
 
-![Description]( https://latex.codecogs.com/svg.image?\large&space;{\color{white}m_{t}}) : First Moment - Mean of Gradients
+<div align="left">
+  <picture>
+    <source srcset="https://latex.codecogs.com/svg.image?\large&space;{\color{black}\epsilon}" media="(prefers-color-scheme: light)">
+    <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}\epsilon}">
+  </picture>
+  : it is really small value to make sure we are not dividing with 0
+</div>
 
-![Description]( https://latex.codecogs.com/svg.image?\large&space;{\color{white}v_{t}}) : Second Moment - Mean of Squared Gradients </br>
-there are many different other optimizers, but these two are the most common ones for `binary cross entropy ` and `Multi Cross entropy`.
+<div align="left">
+  <picture>
+    <source srcset="https://latex.codecogs.com/svg.image?\large&space;{\color{black}m_{t}}" media="(prefers-color-scheme: light)">
+    <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}m_{t}}">
+  </picture>
+  : First Moment - Mean of Gradients
+</div>
+
+<div align="left">
+  <picture>
+    <source srcset="https://latex.codecogs.com/svg.image?\large&space;{\color{black}v_{t}}" media="(prefers-color-scheme: light)">
+    <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}v_{t}}">
+  </picture>
+  : Second Moment - Mean of Squared Gradients
+</div>
+
+there are many different other optimizers, but these two are the most common ones for `binary cross entropy` and `Multi Cross entropy`.
 
 # How to create a NN
 there are so many different ways to create our own Neural network. We can make one from scratch or we can one using different `tools` like : 
