@@ -64,7 +64,7 @@ ReLU or Rectified Linear Unit is an activation function which make neuron deacti
 <div align="center">
   <img src="https://github.com/GameDevRichtofen-G/Everything-about-Neural-Networks-/blob/main/Relu_function.png"></br>
   <picture>
-    <source srcset="https://latex.codecogs.com/svg.image?\large&space;{\color{black}Relu(x)=max(0,x)}" media="(prefers-color-scheme: light)">
+    <source srcset="https://latex.codecogs.com/svg.image?\large&space;{\color{black}Relu(x)=max(0TOx)}" media="(prefers-color-scheme: light)">
     <img src="https://latex.codecogs.com/svg.image?\large&space;{\color{white}Relu(x)=max(0,x)}">
   </picture>
   
