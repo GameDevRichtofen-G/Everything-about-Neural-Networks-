@@ -134,6 +134,7 @@ N = Number of samples (batch size)</br> </br>
   </picture>
   = the predicted value
 </div>
+
 #### Multi Cross entropy
 this loss function is useful if you have model that needs to predict a value more than 0 or 1
 
